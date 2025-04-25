@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![Website Preview](screenshot.png)
+![Website Preview](./screenshot.png)
 
 A responsive personal portfolio website showcasing my skills in data engineering, web development, and data analysis.
 
