@@ -89,10 +89,10 @@ h2 {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 280px;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit:cover;
     border: 5px solid var(--primary-color);
 }
 
@@ -312,3 +312,10 @@ footer {
     margin-left: auto;   
     margin-right: auto;  
   }
+
+  .project-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
