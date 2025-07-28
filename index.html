@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boss Ambani | Data Engineer & Developer</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="images/profile1.jpg" alt="Boss Ambani" class="profile-img">
-        <h1>Boss Ambani</h1>
-        <p>From Databases to Interfaces: Full-Stack Data Solutions</p>
+      <img src="images/profile1.jpg" alt="Boss Ambani" class="profile-img" />
+      <h1>Boss Ambani</h1>
+      <p>From Databases to Interfaces: Full-Stack Data Solutions</p>
     </header>
-    
+
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    
+
     <section id="about">
-        <h2>About Me</h2>
-        <div class="container">
-            <div class="about-text">
-                <p>I'm Boss Ambaka Ambani, a <strong>Data Engineer & Developer</strong> passionate about transforming messy data into clean, valuable insights. I specialize in:</p>
-                <ul>
-                    <li>Designing efficient data pipelines and ETL processes</li>
-                    <li>Building automated solutions to streamline data workflows</li>
-                    <li>Creating clear visualizations that tell compelling data stories</li>
-                </ul>
-                <p>My technical toolkit includes <strong>Python, SQL, Pandas, BeautifulSoup</strong>, and more. I approach data challenges with the same strategic thinking I apply to analyzing NBA analytics - identifying patterns, optimizing performance, and delivering results.</p>
-                <p>When I'm not wrangling data, you'll find me diving deep into basketball statistics, exploring new data visualization techniques, or keeping up with the latest in generative AI.</p>
-            </div>
+      <h2>About Me</h2>
+      <div class="container">
+        <div class="about-text">
+          <p>
+            I'm Boss Ambaka Ambani, a
+            <strong>Data Engineer & Developer</strong> passionate about
+            transforming messy data into clean, valuable insights. I specialize
+            in:
+          </p>
+          <ul>
+            <li>Designing efficient data pipelines and ETL processes</li>
+            <li>Building automated solutions to streamline data workflows</li>
+            <li>
+              Creating clear visualizations that tell compelling data stories
+            </li>
+          </ul>
+          <p>
+            My technical toolkit includes
+            <strong>Python, SQL, Pandas, BeautifulSoup</strong>, and more. I
+            approach data challenges with the same strategic thinking I apply to
+            analyzing NBA analytics - identifying patterns, optimizing
+            performance, and delivering results.
+          </p>
+          <p>
+            When I'm not wrangling data, you'll find me diving deep into
+            basketball statistics, exploring new data visualization techniques,
+            or keeping up with the latest in generative AI.
+          </p>
         </div>
+      </div>
     </section>
-    
+
     <section id="portfolio">
-        <h2>My Work</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Fortune 500 Companies Scraper</h3>
-                    <span class="project-tag">Web Scraping | Data Analysis</span>
-                </div>
-                <p class="project-desc">
-                    Automated extraction and cleaning of company data from Wikipedia:
-                </p>
-                <ul class="project-features">
-                    <li>Developed Python script using BeautifulSoup to extract tabular data</li>
-                    <li>Implemented data cleaning to handle inconsistencies and missing values</li>
-                    <li>Structured final dataset in Pandas and exported to CSV for analysis</li>
-                </ul>
-                <div class="code-snippet">
-                    <pre><code># Core scraping logic
+      <h2>My Work</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Fortune 500 Companies Scraper</h3>
+            <span class="project-tag">Web Scraping | Data Analysis</span>
+          </div>
+          <p class="project-desc">
+            Automated extraction and cleaning of company data from Wikipedia:
+          </p>
+          <ul class="project-features">
+            <li>
+              Developed Python script using BeautifulSoup to extract tabular
+              data
+            </li>
+            <li>
+              Implemented data cleaning to handle inconsistencies and missing
+              values
+            </li>
+            <li>
+              Structured final dataset in Pandas and exported to CSV for
+              analysis
+            </li>
+          </ul>
+          <div class="code-snippet">
+            <pre><code># Core scraping logic
                         table = soup.find_all('table')[0]
                         world_titles = [title.text.strip() for title in table.find_all('th')]
                         df = pd.DataFrame(columns=world_titles)
@@ -68,40 +97,60 @@
                             row_data = [data.text.strip() for data in row.find_all('td')]
                             df.loc[len(df)] = row_data
                     </code></pre>
-                </div>
-                <div class="project-skills">
-                    <span>Python</span>
-                    <span>BeautifulSoup</span>
-                    <span>Requests</span>
-                    <span>Pandas</span>
-                    <span>Data Cleaning</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/bossambani/Data_Analysis/blob/main/Large_Companies.ipynb" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                    <a href="https://github.com/bossambani/Data_Analysis/blob/main/companies.csv" class="project-link">
-                        <i class="fas fa-file-csv"></i> Sample Data
-                    </a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Layoffs Data Cleaning Project</h3>
-                    <span class="project-tag">SQL | Data Cleaning</span>
-                </div>
-                <p class="project-desc">
-                    Comprehensive cleaning and standardization of a global layoffs dataset:
-                </p>
-                <ul class="project-features">
-                    <li><strong>Duplicate Removal:</strong> Identified and eliminated duplicate records using ROW_NUMBER() and CTEs</li>
-                    <li><strong>Data Standardization:</strong> Normalized company names, industries (e.g., consolidated "Crypto" categories), and country formats</li>
-                    <li><strong>Date Conversion:</strong> Transformed text dates to DATE format using STR_TO_DATE</li>
-                    <li><strong>Null Handling:</strong> Implemented JOIN operations to fill missing industry data from related records</li>
-                </ul>
-                <div class="code-snippet">
-                    <pre><code>-- Example of duplicate handling
+          </div>
+          <div class="project-skills">
+            <span>Python</span>
+            <span>BeautifulSoup</span>
+            <span>Requests</span>
+            <span>Pandas</span>
+            <span>Data Cleaning</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/bossambani/Data_Analysis/blob/main/Large_Companies.ipynb"
+              class="project-link"
+            >
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a
+              href="https://github.com/bossambani/Data_Analysis/blob/main/companies.csv"
+              class="project-link"
+            >
+              <i class="fas fa-file-csv"></i> Sample Data
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Layoffs Data Cleaning Project</h3>
+            <span class="project-tag">SQL | Data Cleaning</span>
+          </div>
+          <p class="project-desc">
+            Comprehensive cleaning and standardization of a global layoffs
+            dataset:
+          </p>
+          <ul class="project-features">
+            <li>
+              <strong>Duplicate Removal:</strong> Identified and eliminated
+              duplicate records using ROW_NUMBER() and CTEs
+            </li>
+            <li>
+              <strong>Data Standardization:</strong> Normalized company names,
+              industries (e.g., consolidated "Crypto" categories), and country
+              formats
+            </li>
+            <li>
+              <strong>Date Conversion:</strong> Transformed text dates to DATE
+              format using STR_TO_DATE
+            </li>
+            <li>
+              <strong>Null Handling:</strong> Implemented JOIN operations to
+              fill missing industry data from related records
+            </li>
+          </ul>
+          <div class="code-snippet">
+            <pre><code>-- Example of duplicate handling
                             WITH duplicates_cte AS (
                             SELECT *,
                             ROW_NUMBER() OVER(
@@ -113,225 +162,263 @@
                             )
                             DELETE FROM duplicates_cte WHERE row_num > 1;
                     </code></pre>
-                </div>
-                <div class="project-skills">
-                    <span>SQL</span>
-                    <span>Data Cleaning</span>
-                    <span>ETL</span>
-                    <span>MySQL</span>
-                    <span>Data Quality</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/bossambani/Data_Analysis/blob/main/Data_Cleaning.sql" class="project-link">
-                        <i class="fab fa-github"></i> View SQL Script
-                    </a>
-                </div>
-            </div>
+          </div>
+          <div class="project-skills">
+            <span>SQL</span>
+            <span>Data Cleaning</span>
+            <span>ETL</span>
+            <span>MySQL</span>
+            <span>Data Quality</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/bossambani/Data_Analysis/blob/main/Data_Cleaning.sql"
+              class="project-link"
+            >
+              <i class="fab fa-github"></i> View SQL Script
+            </a>
+          </div>
+        </div>
 
-            <!--
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>NBA Analytics Dashboard</h3>
-                    <span class="project-tag">Coming Soon</span>
-                </div>
-                <p class="project-desc">
-                    Interactive dashboard for exploring NBA player and team statistics:
-                </p>
-                <ul class="project-features">
-                    <li>Currently collecting and processing historical NBA data</li>
-                    <li>Will feature visualizations of player performance metrics</li>
-                    <li>Planned team comparison tools and predictive modeling</li>
-                </ul>
-                <div class="project-skills">
-                    <span>Python</span>
-                    <span>SQL</span>
-                    <span>Data Visualization</span>
-                </div>
-            </div>
-            -->            
-            <!-- To-Do App Project -->
-            <div class="project-card">
-                <img src="images/todo-screenshot1.png" alt="Screenshot of To-Do App" class="project-screenshot">
-                <div class="project-header">
-                    <h3>To-Do App</h3>
-                    <span class="project-tag">Flask | HTML | CSS | SQLite</span>
-                </div>
-                <p class="project-desc">
-                    A simple and interactive web-based To-Do list app with persistent storage:
-                </p>
-                <ul class="project-features">
-                    <li>Users can add, edit, and delete tasks</li>
-                    <li>Real-time updates using jQuery and AJAX</li>
-                    <li>Flask backend with SQLite database</li>
-                </ul>
-                <div class="project-skills">
-                    <span>Flask</span>
-                    <span>JavaScript</span>
-                    <span>jQuery</span>
-                    <span>SQLite</span>
-                    <span>AJAX</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/bossambani/TODO-app" class="project-link">
-                        <i class="fab fa-github"></i> View Code
-                    </a>
-                </div>
-            </div>
-            
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Automated ETL Pipeline</h3>
+            <span class="project-tag">ETL Pipeline</span>
+          </div>
+          <p class="project-desc">
+            End-to-end ETL pipeline to automate data extraction from APIs and
+            store it in a relational database:
+          </p>
+          <ul class="project-features">
+            <li>
+              Extracts user and post data from a public API (JSONPlaceholder)
+            </li>
+            <li>
+              Transforms and validates data using Python and JSON serialization
+            </li>
+            <li>Loads data into a SQLite Database</li>
+            <li>Includes task scheduling</li>
+          </ul>
+          <div class="project-skills">
+            <span>Python</span>
+            <span>SQLite</span>
+            <span>ETL</span>
+          </div>
         </div>
+        <!-- To-Do App Project -->
+        <div class="project-card">
+          <img
+            src="images/todo-screenshot1.png"
+            alt="Screenshot of To-Do App"
+            class="project-screenshot"
+          />
+          <div class="project-header">
+            <h3>To-Do App</h3>
+            <span class="project-tag">Flask | HTML | CSS | SQLite</span>
+          </div>
+          <p class="project-desc">
+            A simple and interactive web-based To-Do list app with persistent
+            storage:
+          </p>
+          <ul class="project-features">
+            <li>Users can add, edit, and delete tasks</li>
+            <li>Real-time updates using jQuery and AJAX</li>
+            <li>Flask backend with SQLite database</li>
+          </ul>
+          <div class="project-skills">
+            <span>Flask</span>
+            <span>JavaScript</span>
+            <span>jQuery</span>
+            <span>SQLite</span>
+            <span>AJAX</span>
+          </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/bossambani/TODO-app"
+              class="project-link"
+            >
+              <i class="fab fa-github"></i> View Code
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section id="skills">
-        <h2>My Skills</h2>
-        <div class="container">
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Data Engineering</h3>
-                <p>SQL, ETL, Data Cleaning</p>
-            </div>
-            
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Programming</h3>
-                <p>Python, Pandas, Web Scraping</p>
-            </div>
-            
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3>Data Analysis</h3>
-                <p>Visualization, Statistics</p>
-            </div>
+      <h2>My Skills</h2>
+      <div class="container">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Engineering</h3>
+          <p>SQL, ETL, Data Cleaning</p>
         </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programming</h3>
+          <p>Python, Pandas, Web Scraping</p>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Data Analysis</h3>
+          <p>Visualization, Statistics</p>
+        </div>
+      </div>
     </section>
 
     <section id="services">
-        <h2>Services</h2>
-        <div class="container">
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Custom Web Applications</h3>
-                <p>End-to-end development of data-driven web apps with Python and JavaScript.</p>
-            </div>
-    
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <h3>Data Engineering</h3>
-                <p>Build robust data pipelines, clean messy datasets, and optimize storage systems.</p>
-            </div>
-    
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class="fas fa-chart-pie"></i>
-                </div>
-                <h3>Data Analysis & Visualization</h3>
-                <p>Create dashboards and visual reports to uncover actionable insights.</p>
-            </div>
+      <h2>Services</h2>
+      <div class="container">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h3>Custom Web Applications</h3>
+          <p>
+            End-to-end development of data-driven web apps with Python and
+            JavaScript.
+          </p>
         </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Data Engineering</h3>
+          <p>
+            Build robust data pipelines, clean messy datasets, and optimize
+            storage systems.
+          </p>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h3>Data Analysis & Visualization</h3>
+          <p>
+            Create dashboards and visual reports to uncover actionable insights.
+          </p>
+        </div>
+      </div>
     </section>
-    
-    
+
     <section id="contact">
-        <h2>Get In Touch</h2>
-        <form id="contact-form" action="https://formspree.io/f/xkgrgglb" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            
-            <button type="submit" id="submit-btn">Send Message</button>
-            
-            <div id="form-status" class="status-message"></div>
-            
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
-        </form>
-    </section>
-    
-    <style>
-        .status-message {
-            margin-top: 1rem;
-            padding: 0.75rem;
-            border-radius: 4px;
-            display: none;
-        }
-        
-        .success {
-            background-color: #d4edda;
-            color: #155724;
-            display: block;
-        }
-        
-        .error {
-            background-color: #f8d7da;
-            color: #721c24;
-            display: block;
-        }
-    </style>
-    
-    <script>
-        const form = document.getElementById('contact-form');
-        const status = document.getElementById('form-status');
-        const submitBtn = document.getElementById('submit-btn');
-        
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-            
-            fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    status.className = 'status-message success';
-                    status.textContent = 'Message sent successfully!';
-                    form.reset();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            })
-            .catch(error => {
-                status.className = 'status-message error';
-                status.textContent = 'Oops! There was a problem sending your message.';
-            })
-            .finally(() => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
-            });
-        });
-    </script>
-    
-    <footer>
-        <p>&copy; 2025 Boss Ambani. All rights reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/boss-ambaka-261136291/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/bossambani" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/Bossieambaka" target="_blank"><i class="fab fa-twitter"></i></a>
+      <h2>Get In Touch</h2>
+      <form
+        id="contact-form"
+        action="https://formspree.io/f/xkgrgglb"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Send Message</button>
+
+        <div id="form-status" class="status-message"></div>
+
+        <input type="text" name="_gotcha" style="display: none" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourwebsite.com/thanks.html"
+        />
+      </form>
+    </section>
+
+    <style>
+      .status-message {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        border-radius: 4px;
+        display: none;
+      }
+
+      .success {
+        background-color: #d4edda;
+        color: #155724;
+        display: block;
+      }
+
+      .error {
+        background-color: #f8d7da;
+        color: #721c24;
+        display: block;
+      }
+    </style>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const status = document.getElementById("form-status");
+      const submitBtn = document.getElementById("submit-btn");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.className = "status-message success";
+              status.textContent = "Message sent successfully!";
+              form.reset();
+            } else {
+              throw new Error("Network response was not ok");
+            }
+          })
+          .catch((error) => {
+            status.className = "status-message error";
+            status.textContent =
+              "Oops! There was a problem sending your message.";
+          })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+          });
+      });
+    </script>
+
+    <footer>
+      <p>&copy; 2025 Boss Ambani. All rights reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/boss-ambaka-261136291/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/bossambani" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://x.com/Bossieambaka" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
